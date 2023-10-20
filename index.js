@@ -8,7 +8,7 @@ var users = [];
 var logins = [];
 var rooms = [];
 var joined = 0;
-app.use(express.static(__dirname+"/public"))
+app.use(express.static(__dirname))
 
 io.on('connection', (socket) => {
   console.log('a user connected');
